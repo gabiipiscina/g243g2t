@@ -1,20 +1,20 @@
 
 @import url(reset.css);
+:root {
+--cor-fundo-barra:rgb(204, 29, 160);
+}
 .barra{
     width: 100vw;
 }
 .barra_conteudo{
-background-color: palevioletred;
+   background-color:  palevioletred;
 width: 100vw;
 height: 70px;
-display: flex;
-flex-direction: row;
-justify-content: end;
-color: aliceblue;
+color: rgb(168, 19, 89);
 box-shadow: 3px 5px 10px rgb(204, 29, 160);
 }
 .btn{
-    background-color: rgb(245, 244, 244);
+    background-color: rgb(129, 27, 129);
     cursor: pointer;
 }
 .login button{
@@ -26,4 +26,51 @@ box-shadow: 3px 5px 10px rgb(204, 29, 160);
     justify-content: center;
     align-items: center;
     font-size: 26px;
+}
+.barra_info{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+}
+.campoInput {
+    width: 200px;
+    height: 30px;
+    position: relative;
+    margin: 3rem 0;
+}
+.campoInput input{
+    position: absolute;
+    inset: 0;
+    background-color: transparent;
+    padding: 0 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid rgb(202, 36, 133);
+    border-radius: .5rem;
+    color: rgb(187, 14, 187);
+
+}
+.campoInput label{
+    position: relative;
+    top: 30%;
+    left: 1rem;
+    transform: translate(-30%);
+    color: rgb(168, 19, 89);
+    font-size: 1rem;
+    pointer-events: none;
+    padding: 0 .3rem;
+    background-color: rgb(212, 168, 212);
+    pointer-events: var(--cor-fundo-barra);
+    transition: 200ms ease-in-out top,
+    200ms ease-in-out font-size,
+    200ms ease-in-out color;
+}
+.campoInput input:valid + label,
+.campoInput input:focus + label{
+
+    top: -10px;
+    font-size: .8rem;
+    color: bisque;
 }

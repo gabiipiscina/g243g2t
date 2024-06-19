@@ -20,11 +20,17 @@
     <div class="barra_login">
         <div class="barra_base"></div>
         <form class="login">
-            <input type="text" id="usuario" name="usuario" class="login_usuario">
+
+           <div class="campoInput">
+            <input type="text" id="usuario" name="usuario" class="login_usuario" required>
             <label for="usuario">Usuário</label>
-            <input type="password" id="senha" name="senha" class="login_usuario">
+        </div>
+            <input type="password" id="senha" name="senha" class="login_usuario"required>
             <label for="senha">Senha</label>
-            <button class="btn" type="submit">Logar</button>
+            <div class="campoInput">
+                 <button class="btn" type="submit">Logar</button>
+                </div>
+           
            
         </form>
     </div>
@@ -34,6 +40,4 @@
 </div>
     </header>
         
-
-</body>
-</html>
+    
